@@ -28,8 +28,5 @@ setup(
         'twisted >= 13.0.0',
         'treq',
     ],
-    extras_require={
-        'server': ['twisted >= 13.0.0', 'pg8000'],
-    },
     zip_safe=False,
 )

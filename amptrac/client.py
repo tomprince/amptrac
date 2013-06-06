@@ -7,7 +7,7 @@ from twisted.internet.defer import gatherResults
 
 import treq
 
-from amptrac.responder import FetchTicket, FetchReviewTickets
+from amptrac.commands import FetchTicket, FetchReviewTickets
 
 DEFAULT_AMP_ENDPOINT = 'tcp:port=1352:host=twistedmatrix.com'
 
