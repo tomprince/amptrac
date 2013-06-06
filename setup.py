@@ -19,7 +19,9 @@ import setuptools
 setup(
     name='amptrac',
     version='0.0',
-    description='',
+    url='https://github.com/tomprince/amptrac',
+    description="Client for twisted's amp interface to trac",
+    license='MIT',
     author='Tom Prince',
     author_email='tom.prince@ualberta.net',
     packages=['amptrac', 'amptrac.scripts', 'amptrac.test'],
