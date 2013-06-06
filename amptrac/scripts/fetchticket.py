@@ -17,9 +17,12 @@ class Options(usage.Options):
 
 
 def termsize():
-    import fcntl, termios, struct
-    return struct.unpack('hh', fcntl.ioctl(1, termios.TIOCGWINSZ,
-                                           '1234'))
+    try:
+        import fcntl, termios, struct
+        return struct.unpack('hh', fcntl.ioctl(1, termios.TIOCGWINSZ,
+                                               '1234'))
+    except:
+        return 25, 80
 
 
 def convertTime(unixtime):
@@ -60,7 +63,7 @@ def formatTicket(response):
             changes.append('# %(author)s changed %(field)s: '
                            '%(oldvalue)s -> %(newvalue)s' % item)
     sys.__stdout__.write('\n'.join([headline, subline] + body + changes +
-                                   ['\n']))
+                                   ['\n']).encode('utf-8'))
 
 
 
