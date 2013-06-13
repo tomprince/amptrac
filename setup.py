@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='amptrac',
     version='0.1',
-    url='https://github.com/tomprince/amptrac',
+    url='https://github.com/twisted-infra/amptrac',
     description="Client for twisted's amp interface to trac",
     license='MIT',
     author='Tom Prince',
