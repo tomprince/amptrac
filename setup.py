@@ -24,8 +24,7 @@ setup(
     license='MIT',
     author='Tom Prince',
     author_email='tom.prince@ualberta.net',
-    packages=['amptrac', 'amptrac.scripts', 'amptrac.test'],
-    scripts=['bin/fetch-ticket', 'bin/review-tickets', 'bin/get-attachment'],
+    packages=['amptrac', 'amptrac.test'],
     install_requires=[
         'twisted >= 13.0.0',
         'treq',
