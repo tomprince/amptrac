@@ -37,7 +37,6 @@ class FetchTicket(amp.Command):
                 ('keywords', amp.Unicode()),
                 ('branch', amp.Unicode()),
                 ('branch_author', amp.Unicode()),
-                ('launchpad_bug', amp.Unicode()),
                 ('attachments', amp.AmpList([('filename', amp.Unicode()),
                                              ('size', amp.Integer()),
                                              ('time', amp.Integer()),
@@ -73,8 +72,7 @@ class FetchReviewTickets(amp.Command):
                                          ('summary', amp.Unicode()),
                                          ('keywords', amp.Unicode()),
                                          ('branch', amp.Unicode()),
-                                         ('branch_author', amp.Unicode()),
-                                         ('launchpad_bug', amp.Unicode())]))]
+                                         ('branch_author', amp.Unicode())]))]
 
 
 
@@ -98,5 +96,4 @@ class UpdateTicket(amp.Command):
                  ('keywords', amp.Unicode(optional=True)),
                  ('branch', amp.Unicode(optional=True)),
                  ('branch_author', amp.Unicode(optional=True)),
-                 ('launchpad_bug', amp.Unicode(optional=True)),
                  ('comment', amp.Unicode(optional=True))]
